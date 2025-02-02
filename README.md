@@ -53,8 +53,6 @@ The **University Group Token (UGT)** is a custom ERC20 token built on the Ethere
 
 Install Dependencies: Run the following command to install the necessary dependencies:
 
-bash
-
 npm install
 Configure the .env File:
 
@@ -62,17 +60,13 @@ Create a .env file in the root directory of the project.
 Add your private key, Infura API key, and Alchemy API key to the .env file:
 text
 
-PRIVATE_KEY=your_private_key
-INFURA_API_KEY=your_infura_api_key
-ALCHEMY_API_KEY=your_alchemy_api_key
+- PRIVATE_KEY=your_private_key
+- INFURA_API_KEY=your_infura_api_key
+- ALCHEMY_API_KEY=your_alchemy_api_key
 Deploy the Contract: Deploy your contract to the Sepolia or Goerli network using Hardhat:
-
-bash
 
 npx hardhat run --network sepolia scripts/deploy.js
 Interact with the Contract: After deploying the contract, you can interact with it using Hardhat’s console:
-
-bash
 
 npx hardhat console --network sepolia
 Example Usage:
